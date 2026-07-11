@@ -1,0 +1,31 @@
+{
+  "symmetry.config.generic.name.symmetrySchematicEditBehavior": "symmetrySchematicEditBehavior",
+  "symmetry.config.generic.prettyName.symmetrySchematicEditBehavior": "Symmetry Schematic Edit Behavior",
+  "symmetry.config.generic.comment.symmetrySchematicEditBehavior": "Whether to allow the Schematic Edit tool mode's functions to be performed on symmetry bases/replicas.",
+  "symmetry.gui.label.symmetry_schematic_edit_behavior.disable": "Disable",
+  "symmetry.gui.label.symmetry_schematic_edit_behavior.replicas_only": "Replicas Only",
+  "symmetry.gui.label.symmetry_schematic_edit_behavior.enable": "Enable",
+
+  "symmetry.config.generic.name.symmetrizeIfSelectedPlacement": "symmetrizeIfSelectedPlacement",
+  "symmetry.config.generic.prettyName.symmetrizeIfSelectedPlacement": "Symmetrize If Selected Placement",
+  "symmetry.config.generic.comment.symmetrizeIfSelectedPlacement": "Whether to symmetrize the selection if a schematic placement is currently selected.",
+
+  "symmetry.config.generic.name.ignoreServerSymmetryEdits": "ignoreServerSymmetryEdits",
+  "symmetry.config.generic.prettyName.ignoreServerSymmetryEdits": "Ignore Server Symmetry Edits",
+  "symmetry.config.generic.comment.ignoreServerSymmetryEdits": "Whether to ignore symmetry placements edits received from the server (e.g. another player places a block or the setblock command is run).",
+
+  "symmetry.config.hotkeys.name.symmetrizeSelection": "symmetrizeSelection",
+  "symmetry.config.hotkeys.prettyName.symmetrizeSelection": "Symmetrize Selection",
+  "symmetry.config.hotkeys.comment.symmetrizeSelection": "Create replica placements of the current selection for symmetry.",
+
+  "symmetry.gui.symmetrize_selection": "Symmetrize Selection",
+  "symmetry.gui.button.symmetrize_selection.symmetry_type": "Symmetry Type: %s",
+  "symmetry.gui.label.symmetry_type.mirror_xz": "Mirror XZ",
+  "symmetry.gui.label.symmetry_type.mirror_z": "Mirror Z",
+  "symmetry.gui.label.symmetry_type.mirror_x": "Mirror X",
+  "symmetry.gui.label.symmetry_type.circle_clockwise": "Clockwise",
+  "symmetry.gui.label.symmetry_type.circle_clockwise.hover": "Identical to Counterclockwise apart from the order\nin which the replica placements are created.",
+  "symmetry.gui.label.symmetry_type.circle_counterclockwise": "Counterclockwise",
+  "symmetry.gui.label.symmetry_type.circle_counterclockwise.hover": "Identical to Clockwise apart from the order\nin which the replica placements are created.",
+  "symmetry.message.warn.overlapping_placements": "§cNote that overlapping placements may hide blocks!§r\n§cSee §6%s§c in the config for more info.§r"
+}
