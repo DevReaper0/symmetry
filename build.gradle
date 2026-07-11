@@ -8,13 +8,14 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-    archivesName = project.archives_base_name
+    archivesName = project.archives_base_name + "-${project.minecraft_version}"
 }
 
 modrinth {
     token = System.getenv("MODRINTH_TOKEN")
     projectId = "symmetric"
     versionNumber = "${project.mod_version}+${project.minecraft_version}"
+    versionName = "v$project.mod_version} for Minecraft ${project.minecraft_version}"
     gameVersions.set(project.minecraft_versions.split(',').toList())
     dependencies {
         required.project "malilib"
