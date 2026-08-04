@@ -46,6 +46,8 @@ public class Symmetry implements ModInitializer {
         KeyCallbacks.init();
     }
 
+    // TODO: Refactor everything into separate files and classes.
+
     public void unloadSchematic(LitematicaSchematic schematic) {
         symmetrySchematics.remove(schematic);
     }

@@ -1,5 +1,6 @@
 package xyz.devreaper0.symmetry;
 
+import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.IConfigOptionListEntry;
 import fi.dy.masa.malilib.util.StringUtils;
 import net.minecraft.util.StringRepresentable;
@@ -15,6 +16,9 @@ public enum SymmetryType implements IConfigOptionListEntry, StringRepresentable 
     MIRROR_X("mirror_x", 2),
     CIRCLE_CLOCKWISE("circle_clockwise", 4),
     CIRCLE_COUNTERCLOCKWISE("circle_counterclockwise", 4);
+
+    public static final StringRepresentable.EnumCodec<SymmetryType> CODEC = StringRepresentable.fromEnum(SymmetryType::values);
+    public static final ImmutableList<SymmetryType> VALUES = ImmutableList.copyOf(values());
 
     private final String configString;
     private final String translationKey;
