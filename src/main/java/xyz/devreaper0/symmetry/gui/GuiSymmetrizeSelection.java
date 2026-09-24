@@ -8,8 +8,8 @@ import fi.dy.masa.malilib.gui.button.ButtonGeneric;
 import fi.dy.masa.malilib.gui.button.IButtonActionListener;
 import fi.dy.masa.malilib.render.GuiContext;
 import fi.dy.masa.malilib.render.RenderUtils;
-import fi.dy.masa.malilib.util.KeyCodes;
 import fi.dy.masa.malilib.util.StringUtils;
+import fi.dy.masa.malilib.util.input.ScanCodes;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.input.KeyEvent;
@@ -117,7 +117,7 @@ public class GuiSymmetrizeSelection extends GuiDialogBase {
 
     @Override
     public boolean onKeyTyped(KeyEvent input) {
-        if (input.key() == KeyCodes.KEY_ENTER) {
+        if (input.key() == ScanCodes.SCAN_RETURN) {
             apply(this.textField.getValue(), this.symmetryType);
             GuiBase.openGui(this.getParent());
             return true;
